@@ -6,14 +6,13 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.JsonOps;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import java.util.ArrayList;
 import java.util.Map;
 import java.util.function.Function;
 import net.kyori.adventure.key.Key;
 import net.minestom.server.item.Material;
 import net.minestom.server.utils.NamespaceID;
 import org.jetbrains.annotations.NotNull;
-import world.rifted.libmmo.registry.DFU;
+import world.rifted.libmmo.dfu.DFU;
 import world.rifted.libmmo.registry.MinestomCodecs;
 import world.rifted.libmmo.registry.Registry;
 

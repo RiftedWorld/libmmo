@@ -4,6 +4,7 @@ java_library(
     visibility = ["//visibility:public"],
     deps = [
         "//src/main/java/world/rifted/libmmo/registry",
+        "//src/main/java/world/rifted/libmmo/dfu",
         "@maven//:net_kyori_adventure_api",
         "@maven//:net_kyori_adventure_key",
         "@maven//:dev_hollowcube_minestom_ce",

@@ -1,4 +1,4 @@
-package world.rifted.libmmo.registry;
+package world.rifted.libmmo.dfu;
 
 import com.mojang.datafixers.util.Pair;
 import java.util.List;
