@@ -8,6 +8,7 @@ import net.minestom.server.utils.NamespaceID;
 import org.jetbrains.annotations.NotNull;
 import rifted.libmmo.item.ItemComponentHandler;
 
+@SuppressWarnings("rawtypes")
 @AutoService(ItemComponentHandler.class)
 public final class RarityHandler implements ItemComponentHandler<Rarity> {
 
