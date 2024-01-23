@@ -16,8 +16,6 @@ public interface Item extends Resource {
 
     @NotNull Tag<NamespaceID> ID_TAG = Tag.String("id").map(NamespaceID::from, NamespaceID::asString);
 
-    @NotNull Component displayName();
-
     @NotNull Material material();
 
     @NotNull Collection<ItemComponent> components();
@@ -32,9 +30,7 @@ public interface Item extends Resource {
                 .sorted(Comparator.comparingInt(pair -> pair.getSecond().priority()))
                 .forEach(pair -> pair.getSecond().apply(pair.getFirst(), builder));
 
-        return builder
-                .displayName(this.displayName())
-                .meta(meta -> {
+        return builder.meta(meta -> {
                     meta.hideFlag(ItemHideFlag.HIDE_ATTRIBUTES);
                     meta.setTag(ID_TAG, this.id());
                 }).build();

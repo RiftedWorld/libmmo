@@ -1,17 +1,11 @@
 package rifted.libmmo.item;
 
 import java.util.Collection;
-import net.kyori.adventure.text.Component;
 import net.minestom.server.item.Material;
 import net.minestom.server.utils.NamespaceID;
 import org.jetbrains.annotations.NotNull;
 
 public record ItemImpl(@NotNull ItemRegistry.Entry entry) implements Item {
-
-    @Override
-    public @NotNull Component displayName() {
-        return Component.text(this.name()); // todo: implement
-    }
 
     @Override
     public @NotNull Material material() {

@@ -6,6 +6,14 @@
       {
         "type": "libmmo:rarity",
         "value": "common"
+      },
+      {
+        "type": "libmmo:description",
+        "value": "A very long description for a relative common item. This description should be long enough to test the text wrapping."
+      },
+      {
+        "type": "libmmo:display_name",
+        "value": "<bold><rainbow>Very Common Item"
       }
     ]
   }
