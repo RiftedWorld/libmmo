@@ -1,0 +1,21 @@
+bazel_dep(name = "rules_jvm_external", version = "6.0")
+
+# bazel run @unpinned_maven//:pin
+maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+maven.install(
+    artifacts = [
+        "dev.hollowcube:minestom-ce:5347c0b11f",
+        "com.mojang:datafixerupper:6.0.10",
+        "ch.qos.logback:logback-classic:1.4.14",
+        "com.google.auto.service:auto-service:1.1.1"
+    ],    
+    repositories = [
+        "https://repo1.maven.org/maven2/",
+        "https://jitpack.io/",
+        "https://libraries.minecraft.net/"
+    ],
+    lock_file = "//:maven_install.json"
+)
+use_repo(maven, "maven", "unpinned_maven")
+
+bazel_dep(name = "buildifier_prebuilt", version = "6.1.2", dev_dependency = True)

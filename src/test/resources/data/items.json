@@ -1,0 +1,12 @@
+[
+  {
+    "id": "libmmo:demo_item",
+    "material": "minecraft:dirt",
+    "components": [
+      {
+        "type": "libmmo:rarity",
+        "value": "common"
+      }
+    ]
+  }
+]
