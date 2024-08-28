@@ -4,7 +4,7 @@ bazel_dep(name = "rules_jvm_external", version = "6.0")
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
     artifacts = [
-        "dev.hollowcube:minestom-ce:5347c0b11f",
+        "dev.hollowcube:minestom-ce:1554487748",
         "com.mojang:datafixerupper:6.0.10",
         "ch.qos.logback:logback-classic:1.4.14",
         "com.google.auto.service:auto-service:1.1.1",
