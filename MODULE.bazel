@@ -6,7 +6,7 @@ maven.install(
     artifacts = [
         "dev.hollowcube:minestom-ce:5347c0b11f",
         "com.mojang:datafixerupper:6.0.10",
-        "ch.qos.logback:logback-classic:1.4.14",
+        "ch.qos.logback:logback-classic:1.5.11",
         "com.google.auto.service:auto-service:1.1.1",
         "com.github.davidmoten:word-wrap:0.1.12",
         "net.kyori:adventure-text-minimessage:4.15.0"
